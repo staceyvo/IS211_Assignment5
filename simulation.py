@@ -102,8 +102,6 @@ if __name__ == '__main__':
     requests = read_file(args['filename'])
 
     if 'servers' in args:
-        simulateManyServers(requests, args['servers'])
+        print(simulateManyServers(requests, args['servers']))
     else:
         print(simulateOneServer(requests))
-    print simulateOneServer(requests)
-    print simulateManyServers(requests, 10)
